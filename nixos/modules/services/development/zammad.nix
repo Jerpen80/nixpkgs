@@ -314,7 +314,7 @@ in
           cat ${cfg.secretKeyBaseFile}
         } > ./config/secrets.yml
         ''}
-
+        echo "Database login"
         if [ `${config.services.postgresql.package}/bin/psql \
                   --host ${cfg.database.host} \
                   ${optionalString
